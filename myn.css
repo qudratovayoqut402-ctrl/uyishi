@@ -1,0 +1,232 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Logo Style */
+.logo {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 900;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transform: skewX(-8deg);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Header Navbar */
+.navbar {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: #000000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* White Pill Title Container */
+.pill-title {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 320px;
+  text-align: center;
+  border-radius: 40px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Position Section */
+.position-section {
+  width: 100%;
+  max-width: 800px;
+  padding: 30px 20px 70px 20px;
+  position: relative;
+  
+  /* Background Image / Gradient */
+  background-image: url('images/bg.jpg'); /* Rasm yo'lini shu yerga qo'ying */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Rasm yo'q bo'lsa zaxira quyuq ko'k gradient */
+  background-color: #08121e;
+}
+
+.boxes-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box-pair {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+/* Green Box (Relative) */
+.green-box {
+  width: 120px;
+  height: 120px;
+  background-color: #00ff00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.green-box span {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Red Box (Absolute) */
+.red-box {
+  width: 120px;
+  height: 120px;
+  background-color: #ff0000;
+  box-shadow: 0 0 20px rgba(ff, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.red-box span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Middle Oval Red Box */
+.rounded-box {
+  width: 180px;
+  height: 110px;
+  border-radius: 60px;
+  top: 10px;
+  right: 0;
+}
+
+/* Information Section */
+.info-section {
+  width: 100%;
+  max-width: 800px;
+  background-color: #000000;
+  padding: 40px 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background-color: #631e1e;
+  flex: 1;
+  padding: 25px 15px;
+  border-radius: 2px;
+  text-align: center;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.static-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #ffffff;
+  max-width: 190px;
+  margin-top: 10px;
+}
+
+.card-image-box {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Footer Section */
+.footer {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 40px 10px;
+  background-color: #000000;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
